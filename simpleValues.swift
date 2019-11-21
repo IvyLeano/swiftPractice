@@ -23,8 +23,10 @@ print("myExplicitVariable is \(myExplicitVariable)")
 print("myConstant is \(myConstant)")
 print("myExplicitConstant is \(myExplicitConstant)")
 
+
+
 //Notes:
-// 1. values are never implicitly converted to another type - must do so explicity
+// 1. values are never implicitly converted to another type - must do so explicity, or print using the format above
 // ex) let label = "The width is"
 //     let width = 94
 //     let widthLabel = label + String(width)
