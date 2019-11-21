@@ -47,3 +47,19 @@ print(array.count)
 //    ex) print(uninitializedArray)
 // 4. can't access an index that is out of bounds
 // from: https://developer.apple.com/documentation/swift/array
+
+//Run
+// shoppingList[0] is salmon.
+// shoppingList is ["salmon", "chicken", "tulips", "roses"]
+// [1, 2, 3, 4, 5, 6]
+// 4
+// ["Tim": "Gardener", "Kaylee": "Plumber"]
+// Optional("Plumber")
+// Plumber
+// [:]
+// [1.7, 1.2, 1.7]
+// 1.2
+// [1, 1, 1, 1, 1]
+// []
+// true
+// 0
