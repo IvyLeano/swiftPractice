@@ -25,5 +25,16 @@ func calculate(x: Int, y: Int) -> (Int, Int, Int) {
 
     return (add, subtract, divide)
 }
-let calculate = calculate(x: 4, y: 2)
-print(calculate)
+let calc = calculate(x: 4, y: 2)
+print("calc: \(calc)")
+
+//tuple: with return names
+func calculate2(x: Int, y: Int) -> (add: Int, subtract: Int, divide: Int) {
+    let add = x + y
+    let subtract = x - y
+    let divide = x / y
+
+    return (add, subtract, divide)
+}
+let calc2 = calculate2(x: 4, y: 2)
+print("calc2: \(calc2)")
