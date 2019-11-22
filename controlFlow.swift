@@ -12,6 +12,14 @@ let scores = [
 var optionalName: String? = "Tony Stark"
 var greeting: String
 
+//Another way to handle optional values is to provide a default value using the '??' operator
+//If the optional value is missing the default value is used
+let nickName: String? = nil 
+let fullName: String = "John Appleseed"
+let informalGreeting = "Hi \(nickName ?? fullName)"
+
+print(informalGreeting)
+
 //use if and switch to make conditionals
 // 1. if statements 
 if scores["FinalExam"]! < 50 {
@@ -40,3 +48,4 @@ print(greeting)
 //Notes:
 // 1. parentheses aroung the condition or loop variables are optional
 // 2. braces around the body are required
+// 3. using '!' after optional values, unwraps value so the 'optional' keyword is not printed
