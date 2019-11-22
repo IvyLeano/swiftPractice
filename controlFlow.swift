@@ -68,6 +68,11 @@ for (type, numbers) in interestingNumbers {
     }
 }
 
+// for-in with a range
+for i in 0..<5 {
+    print("i is: \(i)")
+}
+
 // 2. while: to repeat a block of code until a condition is met / changes
 var n = 0
 while n < 100 {
@@ -81,7 +86,46 @@ repeat {
     m += 1
 } while m < 100
 print("m is: \(m)")
+
 //Notes:
 // 1. parentheses aroung the condition or loop variables are optional
 // 2. braces around the body are required
 // 3. using '!' after optional values, unwraps value so the 'optional' keyword is not printed
+
+//Run
+// You did not pass the course
+// Hello, Tony Stark !
+// Hi John Appleseed
+// Apples are red.
+// Test2: 20%
+// Project2: 50%
+// FinalExam: 40%
+// Test1: 75%
+// Project1: 75%
+// Fibinacci:
+// 1
+// 1
+// 2
+// 3
+// 5
+// 8
+// Prime:
+// 2
+// 3
+// 4
+// 5
+// 11
+// 13
+// Square:
+// 1
+// 4
+// 9
+// 16
+// 25
+// i is: 0
+// i is: 1
+// i is: 2
+// i is: 3
+// i is: 4
+// n is: 100
+// m is: 100
