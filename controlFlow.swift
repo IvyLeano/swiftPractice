@@ -69,10 +69,18 @@ for (type, numbers) in interestingNumbers {
 }
 
 // 2. while: to repeat a block of code until a condition is met / changes
-// condition can be at the end of the loop as well
+var n = 0
+while n < 100 {
+    n += 1
+}
+print("n is: \(n)")
 
 // 3. repeat-while
-
+var m = 0
+repeat {
+    m += 1
+} while m < 100
+print("m is: \(m)")
 //Notes:
 // 1. parentheses aroung the condition or loop variables are optional
 // 2. braces around the body are required
