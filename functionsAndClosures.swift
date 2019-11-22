@@ -38,3 +38,30 @@ func calculate2(x: Int, y: Int) -> (add: Int, subtract: Int, divide: Int) {
 }
 let calc2 = calculate2(x: 4, y: 2)
 print("calc2: \(calc2)")
+
+//nested functions
+func returnFifteen() -> Int {
+    var y = 10
+    func add(){
+        y += 5
+    }
+    add()
+    return y
+}
+print(returnFifteen())
+
+// functions are a first-class type: a function can return another function
+func makeIncrement() -> ((Int) -> Int) {
+    func addOne(number: Int) -> Int {
+        return number + 5
+    }
+    return addOne
+}
+
+var increment = makeIncrement()
+print(increment(7))
+
+// functions can take on another function as one of its argument
+func hasAnyMatches(list: [Int], condition: (Int) -> Bool) -> Bool {
+    
+}
