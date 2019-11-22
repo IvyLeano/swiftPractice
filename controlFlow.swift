@@ -1,3 +1,4 @@
+
 //variables used in this exercise
 let scores = [
     "Test1": 75,
@@ -5,6 +6,11 @@ let scores = [
     "Project1": 75,
     "Project2": 50,
     "FinalExam": 40
+]
+let interestingNumbers = [
+    "Prime": [2,3,4,5,11,13],
+    "Fibinacci": [1,1,2,3,5,8],
+    "Square": [1,4,9,16,25]
 ]
 //optional value: either contains a 'value' or contains 'nil'
 //nil indicates that that a value is missing
@@ -18,7 +24,7 @@ let nickName: String? = nil
 let fullName: String = "John Appleseed"
 let informalGreeting = "Hi \(nickName ?? fullName)"
 
-print(informalGreeting)
+let colour = "red"
 
 //use if and switch to make conditionals
 // 1. if statements 
@@ -35,13 +41,35 @@ if let name = optionalName {
     greeting = "Hello! What is your name?"
 }
 print(greeting)
+print(informalGreeting)
 
 // 2. switch statements
+// switch statements are not limited to Int or tests for equality
+switch colour {
+    case "red":
+        print("Apples are red.")
+    case "Blue":
+        print("Blueberries are blue.")
+    default:
+        print("All colours are in a rainbow.")
+}
 
 //use for-in, while and repeat-while to make loops
-// 1. for-in
+// 1. for-in: to iterate over items in a dictionary(unordered collection, iteration is done in an arbitrary order)
+for (type, score) in scores {
+    print("\(type): \(score)%")
+}
+// type, number = key - value
+// number in numbers = number in value array
+for (type, numbers) in interestingNumbers {
+    print("\(type): ")
+    for number in numbers {
+        print("\(number)")
+    }
+}
 
-// 2. while
+// 2. while: to repeat a block of code until a condition is met / changes
+// condition can be at the end of the loop as well
 
 // 3. repeat-while
 
