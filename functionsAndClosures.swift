@@ -91,3 +91,15 @@ print(mappedNumbers)
 let sortedNumbers = numbers.sorted { $0 > $1 }
 print(sortedNumbers)
 
+// Run
+// Hello Bob, today is Tuesday.
+// 4 + 10 = 14
+// 3 + 5 = 8
+// calc: (6, 2, 2)
+// calc2: (add: 6, subtract: 2, divide: 2)
+// 15
+// 12
+// Passing a function as a parameter: true
+// [60, 57, 21, 36]
+// [60, 57, 21, 36]
+// [20, 19, 12, 7]
