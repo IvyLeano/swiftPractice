@@ -26,5 +26,13 @@ var shapeDescription = shape.simpleDescription()
 
 print(shapeDescription)
 
+// Subclasses
+
+
 // Notes
 // 1. Every property needs a value assigned - either in its declaration or in its initializer
+// 2. There is no requirement for classes to sublcass any standard root class, include superclass as needed
+// 3. Methods on a subclass that override the superclass's implementation are marked with 'override'
+//      a. overriding a method by accident, without 'override' or
+//      b. methods with 'override' that don't actually override any method in the superclass are detected by the compiler
+//         resulting in an error
