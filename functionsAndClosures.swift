@@ -87,3 +87,7 @@ print(numbers.map({(number: Int) -> Int in
 let mappedNumbers = numbers.map({ number in 3 * number })
 print(mappedNumbers)
 
+// when a closure is the only argument to a function, you can omit the parentheses entirely
+let sortedNumbers = numbers.sorted { $0 > $1 }
+print(sortedNumbers)
+
