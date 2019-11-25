@@ -49,6 +49,19 @@ let test = Square(sideLength: 5.2, name: "my test square")
 print(test.area())
 print(test.simpleDescription())
 
+// getter and setter methods
+class EquilateralTriangle: Shape {
+    var sideLength: Double = 0.0
+
+    init(sideLength: Double, name: String) {
+        self.sideLength = sideLength
+        super.init(name: name)
+        numberOfSides = 3
+    }
+
+    
+}
+
 // Notes
 // 1. Every property needs a value assigned - either in its declaration or in its initializer
 // 2. There is no requirement for classes to sublcass any standard root class, include superclass as needed
