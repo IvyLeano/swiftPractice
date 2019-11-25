@@ -124,3 +124,15 @@ print(sideLength)
 //      a. set the value of properties that the subclass declares 
 //      b. call the superclass's initializer
 //      c. change the value of properties defined by the superclass - any additional setup work (getter/setter)
+
+// Run
+// A shape with 4 sides is a square.
+// 27.04
+// A square with sides of length 5.2
+// Perimeter is: 3.0
+// Perimeter after set is called: 20.0
+// 10.0
+// 10.0
+// 50.0
+// 50.0
+// Optional(2.5)
