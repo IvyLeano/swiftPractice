@@ -87,4 +87,7 @@ print("Perimeter after set is called: \(triangle.perimeter)")
 //      a. overriding a method by accident, without 'override' or
 //      b. methods with 'override' that don't actually override any method in the superclass are detected by the compiler
 //         resulting in an error
-// 
+// 4. Initializers:
+//      a. set the value of properties that the subclass declares 
+//      b. call the superclass's initializer
+//      c. change the value of properties defined by the superclass - any additional setup work (getter/setter)
