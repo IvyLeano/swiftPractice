@@ -63,9 +63,14 @@ class EquilateralTriangle: Shape {
         get {
             return sideLength
         }
+        //set with a value that has an implicit name 'newValue'
         set {
             sideLength = newValue * 2
         }
+        // set with explicit name 'newValue'
+            // set (newValue) {
+            //     sideLength = newValue * 2
+            // }
     }
 }
 let triangle = EquilateralTriangle(sideLength: 3.0, name: "Triangle")
@@ -73,7 +78,7 @@ let triangle = EquilateralTriangle(sideLength: 3.0, name: "Triangle")
 print("Perimeter is: \(triangle.perimeter)")
 // perimeter - set is called, passing through 10 as the newValue
 triangle.perimeter = 10
-print("Perimiter after set is called: \(triangle.perimeter)")
+print("Perimeter after set is called: \(triangle.perimeter)")
 
 // Notes
 // 1. Every property needs a value assigned - either in its declaration or in its initializer
@@ -82,3 +87,4 @@ print("Perimiter after set is called: \(triangle.perimeter)")
 //      a. overriding a method by accident, without 'override' or
 //      b. methods with 'override' that don't actually override any method in the superclass are detected by the compiler
 //         resulting in an error
+// 
