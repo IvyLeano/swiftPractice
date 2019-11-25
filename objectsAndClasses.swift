@@ -27,6 +27,25 @@ var shapeDescription = shape.simpleDescription()
 print(shapeDescription)
 
 // Subclasses
+class Square: Shape {
+    var sideLength: Double
+
+    init(sideLength: Double, name: String) {
+        self.sideLength = sideLength
+        // 'super' keyword used
+        super.init(name: name)
+        numberOfSides = 4
+    }
+
+    func area() -> Double {
+        return sideLength * sideLength
+    }
+    // overrided function
+    override func simpleDescription() -> String {
+        return "A square with sides of length \(sideLength)"
+    }
+}
+
 
 
 // Notes
