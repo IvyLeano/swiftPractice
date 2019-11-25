@@ -69,7 +69,11 @@ class EquilateralTriangle: Shape {
     }
 }
 let triangle = EquilateralTriangle(sideLength: 3.0, name: "Triangle")
-
+// perimeter - get is called
+print("Perimeter is: \(triangle.perimeter)")
+// perimeter - set is called, passing through 10 as the newValue
+triangle.perimeter = 10
+print("Perimiter after set is called: \(triangle.perimeter)")
 
 // Notes
 // 1. Every property needs a value assigned - either in its declaration or in its initializer
