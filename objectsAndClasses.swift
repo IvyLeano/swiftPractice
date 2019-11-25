@@ -50,6 +50,25 @@ print(test.area())
 print(test.simpleDescription())
 
 // getter and setter methods
+class EquilateralTriangle: Shape {
+    var sideLength: Double = 0.0
+
+    init(sideLength: Double, name: String) {
+        self.sideLength = sideLength
+        super.init(name: name)
+        numberOfSides = 3
+    }
+    var perimeter: Double {
+        // methods with setter functions must have getter functions
+        get {
+            return sideLength
+        }
+        set {
+            sideLength = newValue * 2
+        }
+    }
+}
+let triangle = EquilateralTriangle(sideLength: 3.0, name: "Triangle")
 
 
 // Notes
