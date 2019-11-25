@@ -83,3 +83,7 @@ print(numbers.map({(number: Int) -> Int in
     return result
 }))
 
+// when a closure type is already known, you can omit parameter type, return type of both
+let mappedNumbers = numbers.map({ number in 3 * number })
+print(mappedNumbers)
+
