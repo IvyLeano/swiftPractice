@@ -76,3 +76,10 @@ func lessThanTen(number: Int) -> Bool {
 }
 var numbers = [20, 19, 7, 12]
 print("Passing a function as a parameter: \(hasAnyMatches(list: numbers, condition: lessThanTen))")
+
+// writing a closure without a name by surrounding code with braces - use key word 'in'
+print(numbers.map({(number: Int) -> Int in
+    let result = 3 * number
+    return result
+}))
+
