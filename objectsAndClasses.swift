@@ -50,17 +50,7 @@ print(test.area())
 print(test.simpleDescription())
 
 // getter and setter methods
-class EquilateralTriangle: Shape {
-    var sideLength: Double = 0.0
 
-    init(sideLength: Double, name: String) {
-        self.sideLength = sideLength
-        super.init(name: name)
-        numberOfSides = 3
-    }
-
-    
-}
 
 // Notes
 // 1. Every property needs a value assigned - either in its declaration or in its initializer
