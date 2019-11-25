@@ -9,6 +9,11 @@ class Shape {
        self.name = name
    }
 
+   // use deinit to create a deinitializer if you need to perform cleanup upon onject deallocation
+   deinit {
+       //....
+   }
+
    func simpleDescription() -> String {
        return "A shape with \(numberOfSides) sides is a \(self.name)."
    } 
