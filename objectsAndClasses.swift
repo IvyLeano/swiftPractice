@@ -45,8 +45,9 @@ class Square: Shape {
         return "A square with sides of length \(sideLength)"
     }
 }
-
-
+let test = Square(sideLength: 5.2, name: "my test square")
+print(test.area())
+print(test.simpleDescription())
 
 // Notes
 // 1. Every property needs a value assigned - either in its declaration or in its initializer
