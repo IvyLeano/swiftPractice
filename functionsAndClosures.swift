@@ -63,5 +63,16 @@ print(increment(7))
 
 // functions can take on another function as one of its argument
 func hasAnyMatches(list: [Int], condition: (Int) -> Bool) -> Bool {
-    
+    for item in list {
+        if condition(item) {
+            return true
+        }
+    }   
+    return false
 }
+
+func lessThanTen(number: Int) -> Bool {
+    return number < 10
+}
+var numbers = [20, 19, 7, 12]
+print("Passing a function as a parameter: \(hasAnyMatches(list: numbers, condition: lessThanTen))")
