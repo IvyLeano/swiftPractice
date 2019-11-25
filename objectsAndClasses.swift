@@ -107,6 +107,12 @@ triangleAndSquare.square = Square(sideLength: 50, name: "larger square")
 print(triangleAndSquare.square.sideLength)
 print(triangleAndSquare.triangle.sideLength)
 
+// optional values
+let optionalSquare: Square? = Square(sideLength: 2.5, name: "optional square")
+let sideLength = optionalSquare?.sideLength
+
+print(sideLength)
+
 // Notes
 // 1. Every property needs a value assigned - either in its declaration or in its initializer
 // 2. There is no requirement for classes to sublcass any standard root class, include superclass as needed
