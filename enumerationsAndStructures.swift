@@ -28,6 +28,36 @@ if let convertedRank = Rank(rawValue: 3) {
     print(threeDescription)
 }
 
+enum Suit {
+    case spades, hearts, diamonds, clubs
+
+    func simpleDescription() -> String {
+        switch self {
+            case .spades:
+                return "spades"
+            case .hearts:
+                return "hearts"
+            case .diamonds:
+                return "diamonds"
+            case .clubs:
+                return "clubs"
+        }
+    }
+    func color() -> String {
+        switch self {
+            case .spades, .clubs
+                return "black"
+            case .hearts, .diamonds
+                return "red"
+        }
+    }
+    let hearts = Suit.hearts
+    let heartsDescription = hearts.simpleDescription()
+}
+
+
+
 
 // Notes:
 // 1. enumerations can have methods associated with them
+// 2. case values of an enumeration are actual values
