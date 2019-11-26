@@ -61,9 +61,35 @@ let color = hearts.color()
 
 print(" of \(hearts) in \(color)")
 
+enum ServerResponse {
+    case result(String, String)
+    case failure(String)
+}
 
+let success = ServerResponse.result("6:00 am", "8:09 pm")
+let failure = ServerResponse.failure("Out of cheese.")
 
+switch success {
+    case let .result(sunrise, sunset):
+        print("Sunrise is at \(sunrise) and sunset is at \(sunset)")    
+    case let .failure(message):
+        print("Failure... \(message)")
+}
+
+// 'struct' keyword - structures support similar behaviours to classes (methods, initializers)
+struct Card {
+    var rank: Rank
+    var suit: Suit
+    func simpleDescription() -> String {
+        return "The \(rank.simpleDescription()) of \(suit.simpleDescription())"
+    }
+}
+let threeOfSpades = Card(rank: .three, suit: .spades)
+let threeOfSpadesDescription = threeOfSpades.simpleDescription()
+print(threeOfSpadesDescription)
 
 // Notes:
 // 1. enumerations can have methods associated with them
 // 2. case values of an enumeration are actual values
+// 3. the difference between structures and classes is that structures are always copied
+//    while classes are passed by reference
