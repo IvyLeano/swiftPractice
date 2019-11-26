@@ -19,13 +19,16 @@ enum Rank: Int {
                 return String(self.rawValue)
         }
     }
-    let ace = Rank.ace
-    let aceRawValue = ace.rawValue
 }
+
+ let ace = Rank.ace
+ let aceRawValue = ace.rawValue
+
+print("Your card is a ", terminator:"")
 
 if let convertedRank = Rank(rawValue: 3) {
     let threeDescription = convertedRank.simpleDescription()
-    print(threeDescription)
+    print(threeDescription, terminator:"")
 }
 
 enum Suit {
@@ -45,15 +48,18 @@ enum Suit {
     }
     func color() -> String {
         switch self {
-            case .spades, .clubs
+            case .spades, .clubs:
                 return "black"
-            case .hearts, .diamonds
+            case .hearts, .diamonds:
                 return "red"
         }
     }
-    let hearts = Suit.hearts
-    let heartsDescription = hearts.simpleDescription()
 }
+let hearts = Suit.hearts
+let heartsDescription = hearts.simpleDescription()
+let color = hearts.color()
+
+print(" of \(hearts) in \(color)")
 
 
 
