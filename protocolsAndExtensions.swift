@@ -28,3 +28,7 @@ class SimpleClass: ExampleProtocol {
  var b = SimpleStructure()
  b.adjust()
  let bDescription = b.simpleDescription
+
+ // Notes:
+ // 1. 'mutating' marks a method that modifies the structure  
+ // 2. use 'extension' to add functionality to an existing type (new methods, computed properties)
