@@ -5,6 +5,7 @@ protocol ExampleProtocol {
 }
 
 // classes, emumerations and structs can all use protocols
+// class example
 class SimpleClass: ExampleProtocol {
     var simpleDescription: String = "A very simple class."
     var anotherProperty: Int = 69105
@@ -17,4 +18,10 @@ class SimpleClass: ExampleProtocol {
  a.adjust()
  let aDescription = a.simpleDescription
 
- 
+ // struct example
+ struct SimpleStructure: ExampleProtocol {
+     var simpleDescription: String = "A simple structure"
+     mutating func adjust() {
+         simpleDescription += " (adjusted)"
+     }
+ }
