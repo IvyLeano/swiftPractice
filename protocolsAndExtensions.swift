@@ -25,3 +25,6 @@ class SimpleClass: ExampleProtocol {
          simpleDescription += " (adjusted)"
      }
  }
+ var b = SimpleStructure()
+ b.adjust()
+ let bDescription = b.simpleDescription
