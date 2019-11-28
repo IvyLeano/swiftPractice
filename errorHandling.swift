@@ -35,3 +35,10 @@ do {
 } catch {
     print(error)
 }
+
+// try? 
+let printerSuccess = try? send(job: 1884, toPrinter: "Mergenthaler")
+let printerFailer = try? send(job: 1885, toPrinter: "Never has toner")
+
+print(printerSuccess!)
+print(printerFailer!)
