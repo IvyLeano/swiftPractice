@@ -1,15 +1,37 @@
 // Errors are represented using any tyoe that adopts the Error protocol
-enum PrintError: Error {
+enum PrinterError: Error {
     case outOfPaper
     case noToner
     case onFire
 }
 
+//Handling Errors
+
 // use 'throw' to throw an error
 // use 'throws' to mark a function that can throw an error
-func send(job: Int, toPrinterName: String) throws -> String {
+func send(job: Int, toPrinter printerName: String) throws -> String {
     if printerName == "Never Has Toner" {
-        throw PrintError.noToner
+        throw PrinterError.noToner
     }
     return "Job sent"
+}
+
+// do-catch
+do {
+    let printerResponse =  try send(job: 1040, toPrinter: "Bi Sheng")
+    print(printerResponse)
+} catch {
+    print(error)
+}
+
+// multiple catch blocks
+do {
+    let printerResponse = try send(job: 1440, toPrinter: "Gutenberg")
+    print(printerResponse)
+} catch PrinterError.onFire {
+    print("I'll just put this over here, with the rest of the fire.")
+} catch let printerError as PrinterError {
+    print("Printer error: \(printerError)")        
+} catch {
+    print(error)
 }
