@@ -44,3 +44,8 @@ class SimpleClass: ExampleProtocol {
  // Notes:
  // 1. 'mutating' marks a method that modifies the structure  
  // 2. use 'extension' to add functionality to an existing type (new methods, computed properties)
+
+// Run
+// A very simple class. Now 100% adjusted.
+// A simple structure (adjusted)
+// The number 7
