@@ -56,3 +56,5 @@ func fridgeContains(_ food: String) -> Bool {
     let result = fridgeContent.contains(food)
     return result
 }
+fridgeContains("banana")
+print(fridgeIsOpen)
