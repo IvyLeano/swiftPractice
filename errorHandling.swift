@@ -42,3 +42,17 @@ let printerFailer = try? send(job: 1885, toPrinter: "Never has toner")
 
 print(printerSuccess!)
 print(printerFailer!)
+
+// use 'defer' to write a block of code that is executed after all other code in the function, just before the function returns
+// used to write a setup and cleanup code next to each other, even though they need to be executed at different times
+var fridgeIsOpen = false
+let fridgeContent = ["milk", "eggs", "leftovers"]
+
+func fridgeContains(_ food: String) -> Bool {
+    fridgeIsOpen = true
+    defer {
+        fridgeIsOpen = false
+    }
+    let result = fridgeContent.contains(food)
+    return result
+}
