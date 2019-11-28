@@ -1,12 +1,12 @@
 // generic functions are written using '<>' brackets
 func makeArray<Item>(repeating item: Item, numberOfTimes: Int) -> [Item] {
     var result = [Item]()
-    for _ in 0..<numberOfTimes> {
+    for _ in 0..<numberOfTimes {
         result.append(item)
     }
     return result
 }
-makeArray(repeating: "knock", numberOfTimes: 4)
+print(makeArray(repeating: "knock", numberOfTimes: 4))
 
 // enum generic forms
 enum OptionalValue<Wrapped> {
@@ -29,7 +29,7 @@ func anyCommonElements<T: Sequence, U: Sequence>(_ lhs: T, _ rhs: U) -> Bool
         }
         return false
     }
-anyCommonElements([1,2,3],[3])
+print(anyCommonElements([1,2,3],[3]))
 
 
 // Notes:
