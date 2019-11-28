@@ -29,6 +29,16 @@ class SimpleClass: ExampleProtocol {
  b.adjust()
  let bDescription = b.simpleDescription
 
+ extension Int: ExampleProtocol {
+     var simpleDescription: String {
+         return "The number \(self)"
+     }
+     mutating func adjust(){
+         self += 42
+     }
+ }
+ print(7.simpleDescription)
+
  // Notes:
  // 1. 'mutating' marks a method that modifies the structure  
  // 2. use 'extension' to add functionality to an existing type (new methods, computed properties)
