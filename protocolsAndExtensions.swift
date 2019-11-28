@@ -17,6 +17,7 @@ class SimpleClass: ExampleProtocol {
  var a = SimpleClass()
  a.adjust()
  let aDescription = a.simpleDescription
+ print(aDescription)
 
  // struct example
  struct SimpleStructure: ExampleProtocol {
@@ -28,6 +29,7 @@ class SimpleClass: ExampleProtocol {
  var b = SimpleStructure()
  b.adjust()
  let bDescription = b.simpleDescription
+ print(bDescription)
 
  extension Int: ExampleProtocol {
      var simpleDescription: String {
