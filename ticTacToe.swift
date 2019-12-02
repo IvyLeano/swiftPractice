@@ -8,14 +8,14 @@
 class TicTacToe {
     
     var grid = [
-        [ false, false, false ],
-        [ false, false, false ],
-        [ false, false, false ]
+        [ 'E', 'E', 'E' ],
+        [ 'E', 'E', 'E' ],
+        [ 'E', 'E', 'E' ]
     ]
     func printGrid(){
         for row in 0...<3 {
             for column in 0...<3 {
-
+                print()
             }
         }
     }
