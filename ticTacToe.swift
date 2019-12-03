@@ -8,17 +8,27 @@
 class TicTacToe {
     
     var grid = [
-        [ 'E', 'E', 'E' ],
-        [ 'E', 'E', 'E' ],
-        [ 'E', 'E', 'E' ]
+        [ "E", "E", "E" ],
+        [ "E", "E", "E" ],
+        [ "E", "E", "E" ]
     ]
+    func instructions(){
+        print("************************************")
+        print("       Welcome to Tic Tac Toe")
+        print("************************************")
+        print("This is a two player game. Player one, select a slot")
+    }
     func printGrid(){
-        for row in 0...<3 {
-            for column in 0...<3 {
-                print()
+        for row in 0..<3 {
+            for column in 0..<3 {
+                print("  \(grid[row][column])  ", terminator:"")
             }
+            print("\n")
+           
         }
     }
 }
 
 var ticTacToe = TicTacToe()
+ticTacToe.instructions()
+ticTacToe.printGrid()
