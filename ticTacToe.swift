@@ -6,7 +6,8 @@
 // 5. control flow
 
 class TicTacToe {
-    
+    var playerOne = false;
+    var playerTwo = false;
     var grid = [
         [ "E", "E", "E" ],
         [ "E", "E", "E" ],
@@ -16,7 +17,24 @@ class TicTacToe {
         print("************************************")
         print("       Welcome to Tic Tac Toe")
         print("************************************")
-        print("This is a two player game. Player one, select a slot")
+        print("This is a two player game!")
+        playerOne = true
+    }
+    func setPlayer() {
+        if playerOne == false {
+            playerOne = true
+            playerTwo = false
+        } else {
+            playerTwo = true
+            playerOne = false
+        }
+    }
+    func play() {
+        if playerOne == true {
+            print("Player one, select a position")
+        } else {
+            print("Player two, select a position")
+        }
     }
     func printGrid(){
         for row in 0..<3 {
