@@ -14,9 +14,9 @@ class TicTacToe {
         [ "E", "E", "E" ]
     ]
     func instructions(){
-        print("************************************")
-        print("       Welcome to Tic Tac Toe")
-        print("************************************")
+        print("***************************************")
+        print("         Welcome to Tic Tac Toe")
+        print("***************************************")
         print("This is a two player game! Let's begin!")
         setPlayer()
         play()
@@ -42,8 +42,9 @@ class TicTacToe {
     }
     func printGrid(){
         for row in 0..<3 {
+            print("           ", terminator:"")
             for column in 0..<3 {
-                print("  \(grid[row][column])  ", terminator:"")
+                print("\(grid[row][column])       ", terminator:"")
             }
             print("\n")
            
