@@ -17,11 +17,15 @@ class TicTacToe {
         print("************************************")
         print("       Welcome to Tic Tac Toe")
         print("************************************")
-        print("This is a two player game!")
-        playerOne = true
+        print("This is a two player game! Let's begin!")
+        setPlayer()
+        play()
+
     }
     func setPlayer() {
-        if playerOne == false {
+        if !playerOne && !playerTwo {
+            playerOne = true
+        } else if !playerOne {
             playerOne = true
             playerTwo = false
         } else {
@@ -31,9 +35,9 @@ class TicTacToe {
     }
     func play() {
         if playerOne == true {
-            print("Player one, select a position")
+            print("Player one, select a position.\n")
         } else {
-            print("Player two, select a position")
+            print("Player two, select a position.\n")
         }
     }
     func printGrid(){
