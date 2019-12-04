@@ -9,9 +9,11 @@ currentHealth = 80
 let maxHealth = 100
 
 // attempting to change constant maxHealth
-// Note: the below line will throw an error
+// Note: the line below would throw an error
 // error: cannot assign to value: 'maxHealth' is a 'let' constant
 
 //maxHealth = 80
 
+// multiple variables can be declared on one line - as long as they are the same type
+var inventory = 5, equipmentSlots = 3, currentGold = 42
 
