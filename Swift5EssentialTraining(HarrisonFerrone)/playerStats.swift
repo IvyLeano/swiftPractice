@@ -19,3 +19,10 @@ var debugStats = "Character: \(characterName)\nWeapon: \(weaponClassification)\n
 // 6.
 var questAccepted = true
 var canQuest = true
+
+// 7. 
+var questStatus = questAccepted && canQuest
+
+// 8. 
+debugStats.append(contentsOf: "\nQuest Status: \(questStatus)\nCan Quest: \(canQuest)\n")
+print(debugStats)
