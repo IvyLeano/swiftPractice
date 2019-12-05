@@ -19,7 +19,7 @@ var x = 20
 var y = 70
 var bool = x > 70 
 
-// 3. logical: !, &&, ||
+// 3. logical: !(NOT operator or "Bang" operator), &&, ||
 var bool2 = x > 70 || y == 70
 
 // 4. ranges: 1...5 or 1..<5 
