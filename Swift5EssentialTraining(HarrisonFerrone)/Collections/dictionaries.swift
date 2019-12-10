@@ -33,3 +33,44 @@ let allValues = [Int](blacksmithShop3.values)
 print(allKeys1)
 print(allKeys)
 print(allValues)
+
+// CORE DICTIONARY METHODS
+
+// 1.caching and overwriting items
+var playerStats: [String: Int] = ["HP": 100, "Attack": 35, "Gold": 29]
+var oldValue = playerStats.updateValue(30, forKey:"Attack")     // creates a new key: value pair if the referenced key does not exist
+
+// overrides existing element with new one
+// playerStats = ["Evasion": 12, "MP": 55]    
+
+// 2. caching and removing items
+
+// playerStats["Gold"] = nil
+var removedValues = playerStats.removeValue(forKey: "Gold")
+
+print(playerStats)
+print(oldValue)
+
+// 3. nested dictionaries
+
+// compiler infers types in the example below
+var questBoard = [
+    // the value for each key is a dictionary
+    "Fetch Gemstones": [
+        "Objective": "Retrieve 5 gemstones",
+        "Secret": "Complete in under 5 minutes"
+    ],
+    "Defeat Big Boss": [
+        "Objective": "Beat the boss",
+        "Secret": "Win with 50% health"
+    ]
+]
+// uses the keys as lookups instead of indexes
+// this subscript could give a nil value so we use '?'
+// '?' tells compiler to break the return chain if any of the keys don't exist and immediately return a nil value
+var gemstoneObjective = questBoard["Fetch Gemstones"]?["Objective"]
+var gemstoneObjective2 = questBoard["Fetch Gemstones"]?["objective"]
+
+print(gemstoneObjective)
+print(gemstoneObjective2)
+
