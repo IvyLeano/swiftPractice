@@ -43,7 +43,17 @@ characterClasses.contains("Gunslinger")
 
 print(characterClasses)
 
-// 2D ARRAYS(ARRAYS THAT STORE ARRAYS AS THEIR VALUES) AND SUBSCRIPTS
+// 2D ARRAYS(OR JAGGED ARRAYS - ARRAYS THAT STORE ARRAYS AS THEIR VALUES) AND SUBSCRIPTS
+// inner array types must be the same, arrays don't have to be the same length
+var skillTree: [[String]] = [
+    ["Attack+", "Barrage", "Heavy Hitter"],
+    ["Guard+", "Evasion", "Run"]
+]
+
+// chaining subscripts to access data in a 2D array
+var attackTreeSkill = skillTree[0][2]
+
+print(attackTreeSkill)
 
 // Note: 
 // 1. type inference works for collections
