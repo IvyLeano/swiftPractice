@@ -3,7 +3,7 @@
 
 // must specify that it is a set, else the default is an array
 // var activeQuest: Set = ["Fetch Gemstones", "Big Boss", "The Undertaker", "Granny Needs Firewood"]
-var activeQuest: Set<String> = ["Fetch Gemstones", "Big Boss", "The Undertaker", "Granny Needs Firewood"]
+var activeQuests: Set<String> = ["Fetch Gemstones", "Big Boss", "The Undertaker", "Granny Needs Firewood"]
 
 // inserting and removing elements
 // efficient - index and key value pair references not required
@@ -16,7 +16,7 @@ print(activeQuests)
 activeQuests.contains("All-4-One")
 
 // alphabetically, can also take predicates
-activeQuests.sorted() 
+// activeQuests.sorted() 
 
 // sets can only store values that are hashable (can provide a hash value of themselves)
 // all of swifts basic types are hashable by default
