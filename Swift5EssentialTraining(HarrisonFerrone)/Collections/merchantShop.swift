@@ -22,7 +22,7 @@ var fullArmorSet: Set = ["Comb", "Helm", "Visor"]
 var currentArmorSet: Set = ["Comb", "Visor"]
 
 // 7.
-var subtract = fullArmorSet.subtract(currentArmorSet)
+var subtract = fullArmorSet.subtracting(currentArmorSet)
 print(subtract)
 
 // 8.
