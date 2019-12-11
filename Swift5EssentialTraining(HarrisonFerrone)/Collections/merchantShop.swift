@@ -22,9 +22,9 @@ var fullArmorSet: Set = ["Comb", "Helm", "Visor"]
 var currentArmorSet: Set = ["Comb", "Visor"]
 
 // 7.
-var subtract = currentArmorSet.subtract(fullArmorSet)
+var subtract = fullArmorSet.subtract(currentArmorSet)
 print(subtract)
 
 // 8.
-var armorPieceTuple: (String, Double, Bool) = ("Visor", 50.99, true)
+var armorPieceTuple: (String, Double, Bool) = (name: "Visor", cost: 50.99, canEquip: true)
 print(armorPieceTuple)
