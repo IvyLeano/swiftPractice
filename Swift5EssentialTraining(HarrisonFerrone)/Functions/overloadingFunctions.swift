@@ -1,4 +1,4 @@
-// overloaded functions: multiple functions with the same name; must have different function type or signature
+// overloaded functions: multiple functions with the same name; must have different function type(signature)
 
 // base function
 func attackEnemy() {
