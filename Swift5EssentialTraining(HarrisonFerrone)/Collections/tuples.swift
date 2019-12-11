@@ -20,9 +20,8 @@ print(rechargeable)
 // naming tuple values
 var planetSmashAttack = (name: "Planet Smash", damage: 45, rechargeable: true)
 
-// we still have to initialize shieldStomp just like any other variable
-planetSmash.rechargeable 
-
 // nameing values with type annotation
 var shieldStomp: (name: String, damage: Int, rechargeable: Bool)
+
+// we still have to initialize shieldStomp just like any other variable
 shieldStomp.damage = 100
