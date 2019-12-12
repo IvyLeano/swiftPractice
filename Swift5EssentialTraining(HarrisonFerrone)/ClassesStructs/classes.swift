@@ -44,6 +44,7 @@ class var credo: String {
     init(name: String, maxHP: Int) {
         self.name = name
         self.maxHealth = maxHP
+        self.health = 100
     }
 
     // you can overloaded init()'s but they will need to call the designated init
