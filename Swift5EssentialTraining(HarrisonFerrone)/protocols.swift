@@ -1,3 +1,5 @@
+// REVIEW THIS TOPIC
+
 // protocols can't store values but must have getter and setter methods
 
 // declaring a protocol

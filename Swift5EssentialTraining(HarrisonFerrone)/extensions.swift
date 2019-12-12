@@ -1,3 +1,5 @@
+// REVIEW THIS TOPIC
+
 // declaring a protocol
 protocol Collectable {
     var name: String { get }
