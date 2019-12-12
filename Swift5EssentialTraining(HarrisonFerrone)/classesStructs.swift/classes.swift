@@ -4,6 +4,42 @@ class Adventurer {
 
     var specialMove: String?
 
+// ACCESSING MODIFIERS AND PROPERTIES
+
+// There are 4 types of modifiers:
+// 1. public: freely accessed from inside their source file and any separate module that imports the parent module.
+// 2. internal: accessed by any source file, within their defining module, but no where else. 
+//    Every entity in Swift are set as internal by default.
+// 3. file private: can only be accessed inside theor defining module.
+// 4. private: can only be accessed inside their designated scope (their class).
+
+// There are 2 types of properties:
+
+// 1. Read only property:
+var healthLost: Int {
+    return maxHealth - health
+}
+// 2. Read write property:
+fileprivate var health: Int
+var Health: Int {
+    get { return health }
+    set {
+        if newValue <= 100 {
+            health = newValue
+        }
+    }
+}
+
+// There are 2 type properties:
+
+// 1. Static: cannot be overrided in a subclass
+static var maxActivePlayers = 10 
+
+// 2. class: can only be computed and are overridable from subclasses
+class var credo: String {
+    return "Defend the helpless"
+}
+
     // designated init
     init(name: String, maxHP: Int) {
         self.name = name
@@ -15,7 +51,7 @@ class Adventurer {
         self.init(name: name, maxHP: 100)
     }
     func printStats() {
-        print("Character: \(self.name), Max Health: \(self.maxHealth)")
+        print("Character: \(self.name), Max Health: \(self.health)/\(self.maxHealth)")
     }
 }
 
@@ -29,4 +65,14 @@ player1.name = "Harrision"
 
 player1.player1()
 player2.player1()
+
+// useful when you want to store values that are global to a class or struct
+Adventurer.credo
+Adventurer.maxActivePlayers
+
+
+
+
+
+
 
