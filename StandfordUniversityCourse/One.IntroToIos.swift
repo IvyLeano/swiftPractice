@@ -31,9 +31,14 @@
 //     l. for teams, check 'source control'
 // 5. files of interest in this lesson: 
 //        a. ViewController.swift
-//        b. Main.storyboard
+//        b. Main.storyboard   (user interface)
 //        c. for the remaining files:
 //             - 'ctrl + shft' all files
 //             - right click
 //             - select 'New Group from Selection'
 //             - name file 'Supporting Files'
+// 6. running app on simulator (full iphone simulator)
+//     a. select 'device'
+//     b. click play button
+//     c. go to 'window' > 'scale' to fit the simulator in screen
+//     d. got to 'hardware' > 'home' to see the home screen (ctrl + shft + h)
