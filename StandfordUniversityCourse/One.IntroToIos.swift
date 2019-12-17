@@ -14,7 +14,18 @@
 //     e. accessing ios docs from code
 //     f. optionals
 //     g. ios simulator
-    
+// 4. launching an app in Xcode (IDE for macos)
+//     a. launch Xcode
+//     b. choose ios
+//     c. choose single view application
+//     d. click 'next'
 
-    
+//     e. name application
+//     f. organization identifier should be unique
+//     g. select 'swift' for language
+//     h. select 'universal' for devices (iphone and ipad)
+//     i. select 'core data' IF using a database
+//     j. click next
 
+//     k. save to home directory, in a folder called developer
+//     l. for teams, check 'source control'
