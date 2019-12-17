@@ -42,3 +42,20 @@
 //     b. click play button
 //     c. go to 'window' > 'scale' to fit the simulator in screen
 //     d. got to 'hardware' > 'home' to see the home screen (ctrl + shft + h)
+// 7. Assistant editor button (overlapping circles): splits screen to have both .storyboard and .swift files on screen
+
+// behaviour of button
+import UIKit   // like include
+
+class ViewController: UIViewController {   // class declaration, swift is a single inheritance language
+    // ctrl + click button in .storyboard and drag into this function
+    // outlet connection: make a property
+    // action connection: make a method
+    // set 'arguments' to sender and type to 'UI button' (or specified type - not 'any')
+   
+   // @IBAction is an Xcode thing, that allows you to see what element the function refers to in the
+   // .storyboard file, when hovered over
+    @IBAction func touchDigit(_ sender: UIButton) {
+
+    }
+}
