@@ -54,8 +54,17 @@ class ViewController: UIViewController {   // class declaration, swift is a sing
     // set 'arguments' to sender and type to 'UI button' (or specified type - not 'any')
    
    // @IBAction is an Xcode thing, that allows you to see what element the function refers to in the
-   // .storyboard file, when hovered over
+   // .storyboard file, when hovering over the circle in the gutter.
+   // '_' indicates that there are no external names, when calling function, you can 
+   // use touchDigit() - versus below example. 
+   // '_' is only used for first value and in specific cases(LOOK INTO THIS)
     @IBAction func touchDigit(_ sender: UIButton) {
-
+        var digit
+        print("touchDigit was called")
+    }
+    // the parameters have 2 names: first names ('from','to','using') are external names (used when function is called), while
+    // second names ('startX','endX','color') are internal names (accessible inside the function)
+    func drawHorizontalLine(from startX: Double, to endX: Double, using color: UIColor) {
+        // ....
     }
 }
