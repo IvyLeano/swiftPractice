@@ -29,3 +29,11 @@
 
 //     k. save to home directory, in a folder called developer
 //     l. for teams, check 'source control'
+// 5. files of interest in this lesson: 
+//        a. ViewController.swift
+//        b. Main.storyboard
+//        c. for the remaining files:
+//             - 'ctrl + shft' all files
+//             - right click
+//             - select 'New Group from Selection'
+//             - name file 'Supporting Files'
