@@ -59,7 +59,8 @@ class ViewController: UIViewController {   // class declaration, swift is a sing
    // use touchDigit() - versus below example. 
    // '_' is only used for first value and in specific cases(LOOK INTO THIS)
     @IBAction func touchDigit(_ sender: UIButton) {
-        var digit = sender.currentTitle     // local variables don't usually use type(i.e 'String') - use type inference
+        var digit = sender.currentTitle!     // local variables don't usually use type(i.e 'String') - use type inference
+                                             // digit is a string optional, to unwrap it, use '!'
         print("touchDigit was called: \(digit)")
     }
     // the parameters have 2 names: first names ('from','to','using') are external names (used when function is called), while
