@@ -78,4 +78,12 @@ class ViewController: UIViewController {   // class declaration, swift is a sing
     func drawHorizontalLine(from startX: Double, to endX: Double, using color: UIColor) {
         // ....
     }
+
+    @IBAction func performOperation(_ sender: UIButton) {
+        // unwrapping optionals safely (without '!')
+        // if you can unwrap value, then store it to mathematical symbol and do something
+        if let mathematicalSymbol = sender.currentTitle {
+                    // ...
+        }
+    }
 }
