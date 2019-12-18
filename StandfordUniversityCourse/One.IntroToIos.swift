@@ -80,10 +80,16 @@ class ViewController: UIViewController {   // class declaration, swift is a sing
     }
 
     @IBAction func performOperation(_ sender: UIButton) {
+        userIsInTheMiddleOfTyping = false
         // unwrapping optionals safely (without '!')
         // if you can unwrap value, then store it to mathematical symbol and do something
         if let mathematicalSymbol = sender.currentTitle {
-                    // ...
+                   switch mathematicalSymbol {
+                   case "n":
+                        display!.text = String(Double.pi)
+                   default:
+                       break
+                   }
         }
     }
 }
