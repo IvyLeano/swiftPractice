@@ -43,6 +43,7 @@
 //     c. go to 'window' > 'scale' to fit the simulator in screen
 //     d. got to 'hardware' > 'home' to see the home screen (ctrl + shft + h)
 // 7. Assistant editor button (overlapping circles): splits screen to have both .storyboard and .swift files on screen
+// 8. Swift requires all properties (except optionals which are 'nil' by default) to be initialized, either directly or with a init()
 
 // behaviour of button
 import UIKit   // like include
@@ -52,14 +53,16 @@ class ViewController: UIViewController {   // class declaration, swift is a sing
     // outlet connection: make a property
     // action connection: make a method
     // set 'arguments' to sender and type to 'UI button' (or specified type - not 'any')
-   
+
+   @IBOutlet weak var display: UILabel?
+   var userIsInTheMiddleOfTyping = false
    // @IBAction is an Xcode thing, that allows you to see what element the function refers to in the
    // .storyboard file, when hovering over the circle in the gutter.
    // '_' indicates that there are no external names, when calling function, you can 
    // use touchDigit() - versus below example. 
    // '_' is only used for first value and in specific cases(LOOK INTO THIS)
     @IBAction func touchDigit(_ sender: UIButton) {
-        var digit = sender.currentTitle!     // local variables don't usually use type(i.e 'String') - use type inference
+       let digit = sender.currentTitle!     // local variables don't usually use type(i.e 'String') - use type inference
                                              // digit is a string optional, to unwrap it, use '!'
        // append digit to display when button is clicked
        let textCurrentlyInDisplay = display!.text!
