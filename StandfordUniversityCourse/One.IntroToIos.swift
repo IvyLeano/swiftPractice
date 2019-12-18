@@ -85,8 +85,11 @@ class ViewController: UIViewController {   // class declaration, swift is a sing
         // if you can unwrap value, then store it to mathematical symbol and do something
         if let mathematicalSymbol = sender.currentTitle {
                    switch mathematicalSymbol {
-                   case "n":
+                   case "pisymbol":
                         display!.text = String(Double.pi)
+                    case "sqrt":
+                        let operand = Double(display!.text!)!
+                        display!.text = String(sqrt(operand))
                    default:
                        break
                    }
