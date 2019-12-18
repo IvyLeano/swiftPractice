@@ -61,7 +61,10 @@ class ViewController: UIViewController {   // class declaration, swift is a sing
     @IBAction func touchDigit(_ sender: UIButton) {
         var digit = sender.currentTitle!     // local variables don't usually use type(i.e 'String') - use type inference
                                              // digit is a string optional, to unwrap it, use '!'
-        print("touchDigit was called: \(digit)")
+       // append digit to display when button is clicked
+       let textCurrentlyInDisplay = display!.text!
+       display!.text = textCurrentlyInDisplay + digit // you don't have to unwrap an optional to set it
+
     }
     // the parameters have 2 names: first names ('from','to','using') are external names (used when function is called), while
     // second names ('startX','endX','color') are internal names (accessible inside the function)
